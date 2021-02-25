@@ -73,9 +73,10 @@ describe('library schematic', () => {
     expect(eslintConfig).toContain(`extends: [
     '../../.eslintrc.json',
     'plugin:vue/essential',
+    'eslint:recommended',
     '@vue/typescript/recommended',
-    'prettier',
-    'prettier/@typescript-eslint',
+    '@vue/prettier',
+    '@vue/prettier/@typescript-eslint',
   ]`);
     expect(eslintConfig).toContain(`overrides: [
     {
@@ -251,9 +252,10 @@ describe('library schematic', () => {
       expect(eslintConfig).toContain(`extends: [
     '../../../.eslintrc.json',
     'plugin:vue/essential',
+    'eslint:recommended',
     '@vue/typescript/recommended',
-    'prettier',
-    'prettier/@typescript-eslint',
+    '@vue/prettier',
+    '@vue/prettier/@typescript-eslint',
   ]`);
       expect(eslintConfig).toContain(`overrides: [
     {
@@ -349,9 +351,10 @@ describe('library schematic', () => {
       expect(eslintConfig).toContain(`extends: [
     '../../.eslintrc.json',
     'plugin:vue/essential',
+    'eslint:recommended',
     '@vue/typescript/recommended',
-    'prettier',
-    'prettier/@typescript-eslint',
+    '@vue/prettier',
+    '@vue/prettier/@typescript-eslint',
   ]`);
       expect(eslintConfig).toContain(`overrides: [
     {

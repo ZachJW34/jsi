@@ -73,9 +73,10 @@ describe('nuxt schematic', () => {
     expect(eslintConfig).toContain(`extends: [
     '../../.eslintrc.json',
     '@nuxtjs/eslint-config-typescript',
-    'plugin:nuxt/recommended',
     'prettier',
-    'prettier/@typescript-eslint',
+    'prettier/vue',
+    'plugin:prettier/recommended',
+    'plugin:nuxt/recommended',
   ]`);
 
     expect(
@@ -169,9 +170,10 @@ describe('nuxt schematic', () => {
       expect(eslintConfig).toContain(`extends: [
     '../../../.eslintrc.json',
     '@nuxtjs/eslint-config-typescript',
-    'plugin:nuxt/recommended',
     'prettier',
-    'prettier/@typescript-eslint',
+    'prettier/vue',
+    'plugin:prettier/recommended',
+    'plugin:nuxt/recommended',
   ]`);
 
       expect(
@@ -237,9 +239,10 @@ describe('nuxt schematic', () => {
       expect(eslintConfig).toContain(`extends: [
     '../../.eslintrc.json',
     '@nuxtjs/eslint-config-typescript',
-    'plugin:nuxt/recommended',
     'prettier',
-    'prettier/@typescript-eslint',
+    'prettier/vue',
+    'plugin:prettier/recommended',
+    'plugin:nuxt/recommended',
   ]`);
 
       expect(
