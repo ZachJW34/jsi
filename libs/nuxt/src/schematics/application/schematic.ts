@@ -307,6 +307,7 @@ export default function (options: ApplicationSchematicSchema): Rule {
       addDepsToPackageJson(
         {
           '@nuxt/typescript-runtime': '^2.0.1',
+          'core-js': '^3.8.3',
           nuxt: '^2.14.12',
         },
         {
@@ -317,7 +318,6 @@ export default function (options: ApplicationSchematicSchema): Rule {
           'eslint-plugin-vue': '^7.5.0',
           'eslint-plugin-prettier': '^3.3.1',
           'eslint-plugin-nuxt': '^2.0.0',
-          'fork-ts-checker-webpack-plugin': '^6.1.0',
         },
         true
       ),
