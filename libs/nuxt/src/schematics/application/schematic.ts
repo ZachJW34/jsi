@@ -127,10 +127,8 @@ function addEsLint(options: NormalizedSchema): Rule {
     },
     extends: [
       '@nuxtjs/eslint-config-typescript',
-      'prettier',
-      'prettier/vue',
-      'plugin:prettier/recommended',
       'plugin:nuxt/recommended',
+      'prettier',
     ],
     parserOptions: {
       extraFileExtensions: ['.vue'],
@@ -311,12 +309,11 @@ export default function (options: ApplicationSchematicSchema): Rule {
           nuxt: '^2.14.12',
         },
         {
-          '@nuxtjs/eslint-config': '^5.0.0',
           '@nuxtjs/eslint-config-typescript': '^5.0.0',
           '@nuxt/types': '^2.14.12',
           '@nuxt/typescript-build': '^2.0.4',
           'eslint-plugin-vue': '^7.5.0',
-          'eslint-plugin-prettier': '^3.3.1',
+          'eslint-config-prettier': '8.1.0',
           'eslint-plugin-nuxt': '^2.0.0',
         },
         true

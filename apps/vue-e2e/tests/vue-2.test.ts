@@ -8,7 +8,7 @@ import {
 } from '@nrwl/nx-plugin/testing';
 import { runNxProdCommandAsync, testGeneratedApp } from './utils';
 
-describe('vue 2 e2e', () => {
+describe.skip('vue 2 e2e', () => {
   describe('app', () => {
     it('should generate app', async (done) => {
       const appName = uniq('app');
@@ -159,7 +159,7 @@ describe('vue 2 e2e', () => {
 
       updateFile(
         `apps/${appName}/src/App.vue`,
-        '<script lang="ts">{}</script>'
+        '<script lang="ts">let myVar: {}</script>'
       );
 
       const result = await runNxCommandAsync(`lint ${appName}`, {
